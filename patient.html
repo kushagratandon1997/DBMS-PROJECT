@@ -1,0 +1,153 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>PATIENT REGISTRATION FORM</title>
+<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	
+	
+	 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+	
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> 
+	
+	 
+	
+
+	
+	 
+
+	<style type="text/css">input[type=number]::-webkit-inner-spin-button 
+		{
+		  -webkit-appearance: none;
+		}
+	</style>
+<script type="text/javascript">
+    
+	function Display()
+	{
+		var x1=document.getElementById('text1').value;
+		var x2=document.getElementById('text2').value;
+		var x3=document.getElementById('text3').value;
+		
+		var x5=document.getElementById('text5').value;
+		var x6;
+		var radioo = document.getElementsByName('Gender');
+		for(var i=0;i<2;i++)
+		{
+			if (radioo[i].checked == true) 
+			{
+				x6 = radioo[i].value;
+			}
+		}
+		var x8=document.getElementById('text8').value;
+		var x9=document.getElementById('text9').value;
+		var x10=document.getElementById('text10').value;
+		var x11=document.getElementById('text11').value;
+		var x12= document.getElementById('text12').value;
+		
+
+		
+	}
+	
+</script>
+<style type="text/css">
+
+ body
+	{
+      background-image: url(8.jpg);
+      background-size: cover;
+      color:rgb(0, 0, 0);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      background-origin: center;
+    }
+
+	form 
+	{ 
+	background-color: rgba(0,0,0,0.56); 
+	padding:30px; 
+	margin-top: 41px; 
+	padding-bottom:40px;
+	padding-right: -10px; 
+	 
+	}
+
+	#topsec
+    {
+      overflow: hidden;
+      display: flex;
+      background-color: rgba(0,0,0,0.56);
+      height: 80px;
+      margin: -10px -8px;
+    }
+
+</style>
+</head>
+<body>
+	<div class="container">
+		<div id="topsec">
+	      <div>
+	        <h1 style="text-align:center;margin-left: 287px;color: white;"><u>PATIENT REGISTRATION FORM</u></h1>
+	      </div>
+	    </div>
+
+	<form id="reg">
+		<span style="color:white;font-size: 125%;">Patient ID : </span>  
+			<input type = "text" id="text1"  name ="Username"  placeholder="Patient Name"  required>
+		<br/>
+		<br/>
+		<span style="color:white;font-size: 125%;">Ward ID : </span>  
+			 <input type = "text" id = "text2" placeholder="Ward ID" >
+		<br/>
+		<br/>
+		<span style="color:white;font-size: 125%;">Patient Name:</span>  
+				<input type = "text"  id = "text3" placeholder ="First Name" required>
+		        
+		        <input type = "text" id = "text5" placeholder ="Last Name" required>
+		 <br/> 
+		 <br/>
+		 <span style="color:white;font-size: 125%;">Gender:</span> 
+				 <input type = "radio"   name="Gender"  value="Male" style ="color:white;" required>
+
+		            <label><span style ="color:white;font-size: 100%;font-family:verdana;"> Male </span></label>
+		            
+		          <input type = "radio"   name="Gender"  value="Female" required>
+
+		            <label><span style ="color:white;font-size: 100%;font-family:verdana;"> Female</span></label>
+
+		 <br/>
+		 <br/>
+		 <span style="color:white;font-size: 125%;">Date of Admit : </span>
+			  <input type = "date" id="text8" required>
+		 <br/>
+		 <br/>
+		 <span style="color:white;font-size: 125%;">Date of Discharge : </span>
+			  <input type = "date" id="text9" required>
+		 
+	      <br/>
+	      <br/>
+	     <span style="color:white;font-size: 125%;">House No. : </span>  
+		     <input type = "text"  id = "text10" placeholder = "Home Town" required>
+	     <br/>
+	     <br/>
+	     <span style="color:white;font-size: 125%;">Location : </span> 
+	      <input type = "text"  id = "text11" placeholder = "House No." required>
+	     <br/>
+	     <br/>
+	     <span style="color:white;font-size: 125%;">City : </span> 
+	     
+             <input type = "text" id="text12" placeholder = "City" required />
+	      <br/>
+	      <br/>
+	     
+	     <input type = "submit"  value = "Submit" class="btn btn-success" style="margin-left: 486;">
+	     <input type = "reset"  name ="Reset"   class="btn btn-primary"  value="Reset"  style="margin-left: 56;"onclick = "Reset()">
+    </div>
+
+</form>
+</body>
+</html>
